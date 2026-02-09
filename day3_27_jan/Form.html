@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    form {
+
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        background: snow;
+        width: 450px;
+        padding: 20px;
+    }
+
+    button {
+        margin: 20px auto;
+        padding: 10px;
+        border: none;
+        background-color: orange;
+        color: white;
+    }
+
+    label {
+        margin: 10px 0;
+    }
+</style>
+
+<body>
+    <main>
+        <form>
+            <h1>Student form</h1>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your mail" required>
+            <br>
+            <br>
+            <b>Select Gender</b>
+            <div style="display: flex; gap: 5px; margin: 10px 0">
+                <label for="male">Male</label> <input type="radio" id="male" name="gender">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender">
+            </div>
+            <br>
+
+            <b>Skills</b>
+            <br>
+            <br>
+            HTML<input type="checkbox">
+            CSS<input type="checkbox">
+            JS<input type="checkbox">
+            REACT<input type="checkbox">
+
+            <label for="selection">Select Course</label>
+            <select name="" id="selection">
+                <option>Bsc cs</option>
+                <option>Msc cs</option>
+                <option>BCA</option>
+                <option>MCA</option>
+            </select>
+
+            <label for="pass">Password</label>
+            <input type="password" id="pass" placeholder="Enter your password" required>
+            <br><br>
+            <label for="phone">Phone no.</label>
+            <input type="tel" id="phone" placeholder="Enter your phone no." required>
+            <br><br>
+            <label for="address">Address</label>
+            <textarea id="address" rows="10" cols="10" placeholder="Enter your address here" required></textarea>
+            <button>Submit</button>
+
+        </form>
+    </main>
+</body>
+
+</html>

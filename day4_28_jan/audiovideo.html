@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio/video tag</title>
+</head>
+
+<body>
+    <main>
+        <h2>Video tag</h2>
+        <p>first way with src inside video tag</p>
+        <video src="myvideo.mp4" height="500" width="600" controls autoplay loop>
+        </video>
+
+        <p>second way take source tag inside video tag</p>
+        <video height="500" width="600" muted autoplay loop>
+            <source src="myvideo.mp4" type="video/mp4">
+            <source src="myvideo.mp4" type="video/mp4">
+        </video>
+
+        <h1>first controls</h1>
+        <audio controls>
+            <source src="Tu.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+
+        <h1>second autoplay (controls important!)</h1>
+         <audio autoplay controls>
+            <source src="Tu.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+        <h1>three muted (controls important!)</h1>
+         <audio muted controls>
+            <source src="Tu.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+
+    </main>
+
+
+</body>
+
+</html>

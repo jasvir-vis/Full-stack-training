@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition & Transform (2D)</title>
+    <style>
+        #container {
+            height: 250px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 10px;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition-property: all;
+            transition-timing-function: ease-out;
+            transition-delay: 0.3s;
+            transition-duration: 1.5s;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        #box1:hover {
+            transform: scale(1.2);
+        }
+
+        #box2:hover {
+            transform: scaleX(1.2);
+        }
+
+        #box3:hover {
+            transform: scaleY(1.2);
+        }
+
+        #box4:hover {
+            transform: rotate(45deg);
+        }
+
+        #box5:hover {
+            transform: translate(50px, 20px);
+        }
+
+        #box6:hover {
+            transform: skewX(25deg);
+        }
+
+        #box7:hover {
+            transform: skewY(25deg);
+        }
+
+        #box8:hover {
+            transform: matrix(1, 0.5, -0.5, 1, 30, 20);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-decoration: underline;">Transition + 2D Transform Properties</h1>
+    <div id="container">
+        <div id="box1" class="box">scale(1.2)</div>
+        <div id="box2" class="box">scaleX(1.2)</div>
+        <div id="box3" class="box">scaleY(1.2)</div>
+        <div id="box4" class="box">rotate(45deg)</div>
+        <div id="box5" class="box">translate <br>(50px,20px)</div>
+        <div id="box6" class="box">skewX(25deg)</div>
+        <div id="box7" class="box">skewY(25deg)</div>
+        <div id="box8" class="box">matrix()</div>
+    </div>
+</body>
+
+</html>
