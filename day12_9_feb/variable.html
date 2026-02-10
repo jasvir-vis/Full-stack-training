@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in JavaScript</title>
+</head>
+
+<body>
+    <h1>Variables in JavaScript</h1>
+    <p>In JavaScript, variables are containers for storing values. You can declare them using <b>var</b>, <b>let</b>, or
+        <b>const</b>.</p>
+
+    <h2>Differences</h2>
+    <ul>
+        <li><b>var</b> – Function-scoped, allows redeclaration, can be reassigned.
+            <ol>
+                <li>
+                    var a = 10; // declaration <br>
+                    var a = 20; // redeclaration <br>
+                    a = 30; // re assign
+                </li>
+            </ol>
+        </li>
+        <li><b>let</b> – Block-scoped, cannot be redeclared in the same block, but can be reassigned.
+            <ol>
+                <li>var a = 10; // declaration <br>
+                    <span style="text-decoration: line-through;">var a = 20; </span>// redeclaration not allowed <br>
+                    a = 30; // re assign</li>
+            </ol>
+        </li>
+        <li><b>const</b> – Block-scoped, cannot be redeclared or reassigned (value stays fixed).
+            <ol>
+                <li>var a = 10; // declaration <br>
+                    <span style="text-decoration: line-through;">var a = 20; </span>// redeclaration not allowed <br>
+                    <span style="text-decoration: line-through;">a = 20; </span>// reassign not allowed <br></li>
+            </ol>
+        </li>
+    </ul>
+
+    <h4>Output show in console for this code</h4>
+
+    <script>
+        var a = 10;
+        console.log("var a = 10");
+        var a = 20; // redeclaration allowed
+        console.log("var a redeclared = " + a);
+        a = 30; //  reassignment allowed
+        console.log("var a reassigned = " + a);
+
+
+        let b = 30;
+        console.log("let b = 30");
+        b = 40; // reassignment allowed
+        console.log("let b reassigned = " + b);
+        // let b = 50; // redeclaration not allowed
+
+        const c = 50;
+        console.log("const c = 50");
+        // const c = 40; // redeclaration not allowed
+        // c = 60; // reassignment not allowed
+
+        const firstName = "Jasvir";
+        const lastName = "Singh";
+        const age = 22;
+        const isTeacher = false;
+
+        console.log("My name is " + firstName +" " + lastName + ". I am " + age + " year old.");
+        console.log("Is Jasvir teacher? (true or false) = "+ isTeacher);
+
+
+    </script>
+</body>
+
+</html>
