@@ -7,11 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Hello html,css</p>
+    <p id="para">Hello html,css</p>
     <button id="btn">update</button>
     <script>
-        document.getElementsByTagName('p').innerHTML = "hello";
 
+      //  document.getElementById("para").innerHTML = "Hello Javascript";
+        
+      let button = document.getElementById("btn");
+      button.addEventListener('click', function (){
+        document.getElementById("para").innerHTML = "Hello Javascript";
+      })
+
+      console.log("hello world");
+    console.warn("this is just a warning from myself so not to worry");
+    console.error("this is dummy error no need to worry");
     </script>
 </body>
 
