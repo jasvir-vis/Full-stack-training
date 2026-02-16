@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <style>
+        #logfalse{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #links{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .btn{
+            padding: 10px;
+            background-color: black;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: orange;
+        }
+        .btn a{
+            text-decoration: none;
+            color: white;
+        }
+
+        #login{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #datalist{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        #datalist li{
+            font-size: 18px;
+            font-weight: bold;
+            color: navy;
+            padding: 10px;
+            background-color: lightcyan;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px lightgray;
+            
+        }
+    </style>
+</head>
+<body>
+      <div id="logfalse">
+            <h2>You are not Login or Register</h2>
+            <div>
+                <ul id="links">
+                    <li><button class="btn"><a href="Login.html">Login here</a></button></li>
+                    <li><button class="btn"><a href="Register.html">Register here</a></button></li>
+                </ul>
+            </div>
+
+      </div>
+
+      <div id="login">
+        <h2>Welcome <span id="dname"></span></h2>
+        <ul id="datalist">
+            <li>Email : <span id="dmail"></span></li>
+            <li>Age : <span id="dage"></span></li>
+            <li>City : <span id="dcity"></span></li>
+        </ul>
+        <button class="btn" id="logout" style="color: white;">Logout</button>
+      </div>
+      
+
+
+     <script src="script.js"></script>
+</body>
+</html>
